@@ -15,13 +15,13 @@ sleep(4)
 
 #log in to twitter
 email = driver.find_element_by_xpath('//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div/div/div/div[5]/label/div/div[2]/div/input')
-email.send_keys('edu.pure100@gmail.com', Keys.ENTER)
+email.send_keys('twitter email', Keys.ENTER)
 sleep(1)
 username = driver.find_element_by_xpath('//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div[2]/label/div/div[2]/div/input')
-username.send_keys('scraper00132449', Keys.ENTER)
+username.send_keys('username', Keys.ENTER)
 sleep(1)
 password = driver.find_element_by_xpath('//*[@id="layers"]/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div[2]/div[1]/div/div/div[3]/div/label/div/div[2]/div[1]/input')
-password.send_keys('sqwilalascar100', Keys.ENTER)
+password.send_keys('password', Keys.ENTER)
 
 #waiting for the search box to show up
 WebDriverWait(driver, 5).until(
